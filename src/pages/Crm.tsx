@@ -1,5 +1,3 @@
-import { Container } from '../components/Container.style';
-import { Main, Title } from '../components/Crm/Crm.style';
 import { ModalCrm } from '../components/Crm/ModalCrm/ModalCrm';
 import { ModalCrmSubmit } from '../components/Crm/ModalSubmiting.tsx/ModalSubmiting';
 import { TableCrm } from '../components/Crm/TableCrm/TableCrm';

@@ -1,17 +1,16 @@
+import { useEffect } from 'react';
 import { useFieldArray, useForm } from 'react-hook-form';
 
 import { IFormValues } from '../../../types/CrmTypes';
-import { useEffect } from 'react';
 import { useTypeDispatch, useTypeSelector } from '../../../hooks/redux';
-import { Loader } from '../Crm.style';
-import { addNewContactSvg, closeModalSvg, removeContactSvg } from './ModalCrmSvg';
 import { modalSlice } from '../../../store/reducers/ModalSlice';
+import { clientSlice } from '../../../store/reducers/ClientsSlice';
+import { addNewContactSvg, closeModalSvg, removeContactSvg } from './ModalCrmSvg';
 
 import './modal.style.scss';
-import { clientSlice } from '../../../store/reducers/ClientsSlice';
 
 export const ModalCrm = () => {
-  const { client, isOpenModal } = useTypeSelector((state) => state.modalReducer);
+  const { client } = useTypeSelector((state) => state.modalReducer);
   const { closeAllModal } = modalSlice.actions;
   const { addNewClient, changeClient } = clientSlice.actions;
   const dispatch = useTypeDispatch();
