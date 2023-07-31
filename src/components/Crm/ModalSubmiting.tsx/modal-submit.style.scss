@@ -27,6 +27,7 @@
   max-width: 450px;
   width: 100%;
   padding-top: 22px;
+  background: #fff;
 
   & h3 {
     margin-bottom: 11px;
@@ -87,6 +88,8 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
+    background: none;
+    border: none;
     color: #333333;
     text-decoration-line: underline;
   }
